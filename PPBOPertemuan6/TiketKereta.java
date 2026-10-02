@@ -1,0 +1,25 @@
+package PPBOPertemuan6;
+
+public class TiketKereta extends Tiket{
+    protected int nomorGerbong;
+    protected String nomorKursi;
+
+    // Konstruktor tanpa parameter
+    public TiketKereta() {
+        super();
+    }
+
+    // Konstruktor berparameter
+    public TiketKereta(String kodeTiket, String namaPenumpang, String asal, String tujuan, int hargaDasar, int nomorGerbong, String nomorKursi) {
+        super(kodeTiket, namaPenumpang, asal, tujuan, hargaDasar);
+        this.nomorGerbong = nomorGerbong;
+        this.nomorKursi = nomorKursi;
+    }
+
+    public void tampilTiketKereta() {
+        super.tampilTiket();
+        System.out.println("Nomor Gerbong    = " + nomorGerbong);
+        System.out.println("Nomor Kursi      = " + nomorKursi);
+        System.out.println("Total Bayar      = " + hargaDasar);
+    }
+}

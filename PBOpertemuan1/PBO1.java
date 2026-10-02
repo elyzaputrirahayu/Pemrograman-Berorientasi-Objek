@@ -1,4 +1,4 @@
-package PBODay1;
+package PBOpertemuan1;
 
 public class PBO1 {
     public static void main(String[] args) {
